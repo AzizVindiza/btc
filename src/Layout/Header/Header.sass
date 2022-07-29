@@ -1,2 +1,32 @@
-*
-  background: pink
+.header
+  .container
+    background: linear-gradient(267.43deg, $bg-header 36.58%, $bg-header2 80.91%)
+    box-shadow: 0 4px 40px #0000000C
+    padding: 13px 166px 13px 173px
+
+  &__logo
+    margin-right: 37px
+  &__links
+    column-gap: 43px
+    &-item
+      @include links
+      &:hover
+        color: $text
+  &__btns
+    column-gap: 10px
+    margin-left: auto
+  &__lang,&__money
+
+    background: $btn-bg
+    box-shadow: 0 4px 9px $btn-shadow
+    backdrop-filter: blur(8px)
+    border-radius: 8px
+    column-gap: 8px
+
+  &__lang
+    padding: 7px 12px
+    @include btn
+  &__money
+    padding: 4px 12px
+    @include btn2
+

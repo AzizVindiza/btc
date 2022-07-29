@@ -1,7 +1,59 @@
-
+@import "system"
+@import "fonts"
+//variables
+$bg-color : #151822
+$bg-header :#00FFA31E
+$bg-header2 : #1F1AFF33
+$cont-shadow : #0000000C
+$btn-bg : #FFFFFF26
+$btn-shadow : #B0B0B019
+$text : #fff
+$text2 : #FFFFFF6B
+//variables
+//zero
 *
   margin: 0
-  background: #000
+  padding: 0
+  box-sizing: border-box
+input,button,textarea
+  outline: none
+  border: none
+li
+  list-style: none
+a
+  text-decoration: none
+body
+  background: $bg-color
+//zero
 
+//mixin
+
+//mixin
+//mixin text
+@mixin links
+  font-family: Hauora ,sans-serif
+  font-style: normal
+  font-weight: 600
+  font-size: 14px
+  line-height: 19px
+  text-transform: uppercase
+  color: $text2
+@mixin btn
+  font-family: Hauora ,sans-serif
+  font-style: normal
+  font-weight: 700
+  font-size: 14px
+  line-height: 19px
+  text-transform: uppercase
+  color: $text
+
+@mixin btn2
+  font-family: Hauora ,sans-serif
+  font-style: normal
+  font-weight: 700
+  font-size: 18px
+  line-height: 25px
+  text-transform: uppercase
+  color: $text
 
 @import "Layout/Header/Header"
